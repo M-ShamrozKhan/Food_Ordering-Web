@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        ICT-Project
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/all.css">
+    <link rel="stylesheet" href="../ICT/main.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+        <div class="logo">
+            <!--<img src="../ICT/pictures/logo.JPG">--></div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about" class="nav-btn">About</a></li>
+            <li><a href="#services" class="nav-btn">Services</a></li>
+            <li><a href="../ICT/Pages/reservation.html" class="nav-btn">Reservation</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Order Now
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="../ICT/Pages/chickburger.html">Chicken Burgers</a>
+                        <a href="../ICT/Pages/beefburgers.html">Beef Burgers</a>
+                        <a href="../ICT/Pages/beverages.html">Beverages</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <!--sticky nav-bar on scrolling-->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (this.scrollY > 20) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        };
+    </script>
+
+    <!--hero section-->
+    <section class="home" id="home">
+
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome To Food<span class="hub">Hub</span></div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <section id="orders">
+
+        <h1 style="text-align:center;color: maroon;font-size: xx-large; background-color: black;">Hot Deals</h1>
+
+        <div class="about-center">
+            <article class="about">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../ICT/pictures/deal1.jpeg" alt="Avatar" style="width:300px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Crispy Burger with fries and drink</h2>
+                            <p>Chicken patty, Tomato, bun</p>
+                            <h3>Price: Rs 400.00</h3>
+                            <button id="order" onclick="a()">ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../ICT/pictures/deal2.jpeg" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Cheesy Champ with cheesy fries</h2>
+                        <p>mozerella cheese,zinger </p>
+                        <h3>Price: Rs 490.00</h3>
+                        <button id="order" onclick="a()">ORDER</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../ICT/pictures/deal3.jpeg" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Belt Buster x2 </h2>
+                        <p>Crispy onion,special sauce</p>
+                        <h3>Price: Rs 850.00</h3>
+                        <button id="order" onclick="a()">ORDER</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about">
+        <div>
+            <h2 class="title-about">What We Provide?</h2>
+        </div>
+        <div class="about-center">
+            <!---Single item-->
+            <article class="about">
+                <div class="about-icon"><i class="fas fa-mug-hot"></i></div>
+                <div class="about-text">
+                    <h2 class="about-subtitle">Beverages</h2>
+                    <p class="about-info">Common types of drinks include plain drinking water, milk, coffee, tea, hot chocolate, juice and soft drinks</p>
+                </div>
+            </article>
+            <!--End of single item-->
+
+            <article class="about">
+                <div class="about-icon"><i class="fas fa-utensils"></i></div>
+                <div class="about-text">
+                    <h2 class="about-subtitle">Burgers</h2>
+                    <p class="about-info">This includes fresh, prepared foods as well as packaged foods with desired drinks</p>
+                </div>
+            </article>
+        </div>
+
+
+    </section>
+
+
+    <!--Services-->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title-service">Our Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-gamepad"></i>
+                        <div class="text">Play Area</div>
+                        <p> play area is a place specifically designed to enable children to play there</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-utensils"></i>
+                        <div class="text">F&B Services</div>
+                        <p>We fulfill the the process of preparing, presenting and serving of food and beverages to the customers. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-magic"></i>
+
+                        <div class="text">Live Cooking
+
+                        </div>
+
+                        <p>Our chefs freshly prepare a dish in front of the guests' eyes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="../ICT/script.js"></script>
+</body>
